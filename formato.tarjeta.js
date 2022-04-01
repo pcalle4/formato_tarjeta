@@ -1,3 +1,4 @@
+(function(){
 var wpwlOptions = {
     style: 'card',
     locale: 'es',
@@ -14,3 +15,4 @@ var wpwlOptions = {
       }
     }
   }
+}());
