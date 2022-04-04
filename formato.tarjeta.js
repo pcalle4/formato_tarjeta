@@ -1,18 +1,11 @@
-(function(){
+<script type="text/javascript">
 var wpwlOptions = {
-    style: 'card',
-    locale: 'es',
-    labels: {cvv: 'CVV', cardHolder: 'Nombre (Igual que en la tarjeta)'},
-    onBeforeSubmitCard: function() {
-      if($('.wpwl-control-cardHolder').val() === '') {
-        $('.wpwl-control-cardHolder').addClass("wpwl-has-error");
-        $('.wpwl-control-cardHolder').after("<div class='wpwl-hint-cardHolderError'>Campo requerido</div>");
-	$('.wpwl-button-pay').addClass("wpwl-button-error").attr('disabled', 'disabled');
-	return false;
-      } else {
-	return true;
-    console.log(PAGADO)
-      }
-    }
-  }
-}());
+onReady: function() {
+var datafast= '<br/><br/><img
+src='+'"https://www.datafast.com.ec/images/verified.png"
+style='+'"display:block;margin:0 auto; width:100%;">';
+$('form.wpwl-form-card').find('.wpwl-button'). before(datafast);
+},style: "card",locale: "es", labels: {cvv: "CVV", cardHolder: "Nombre(Igual que
+en la tarjeta)"}
+}
+</script>
